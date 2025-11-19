@@ -1,0 +1,123 @@
+/* --------------------------
+   Algemene pagina styling
+--------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f6fb;
+}
+
+.pagina-titel {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+/* --------------------------
+   Artikel layout
+--------------------------- */
+
+.artikel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Foto */
+.artikel-foto img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.foto-label {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: relative;
+    top: -40px;
+    left: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Tekstblok */
+.artikel-tekstblok {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artikel-tekstblok h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* --------------------------
+   Reactieformulier
+--------------------------- */
+
+.reactie-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    padding: 12px;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* --------------------------
+   Tablet (vanaf 700px)
+--------------------------- */
+
+@media (min-width: 700px) {
+    .artikel-container {
+        flex-direction: row;
+    }
+
+    .artikel-foto,
+    .artikel-tekstblok {
+        flex: 1;
+    }
+}
+
+/* --------------------------
+   Desktop (vanaf 1000px)
+--------------------------- */
+
+@media (min-width: 1000px) {
+    .pagina-titel {
+        font-size: 2.2rem;
+    }
+
+    .artikel-tekstblok {
+        padding: 30px;
+    }
+}
