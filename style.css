@@ -1,7 +1,6 @@
-/* --------------------------
-   Algemene pagina styling
---------------------------- */
-
+/* -----------------------------
+   Algemene pagina
+------------------------------ */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,109 +14,119 @@ body {
     margin-bottom: 30px;
 }
 
-/* --------------------------
-   Artikel layout
---------------------------- */
-
+/* -----------------------------
+   Artikelen / Artikelpagina
+------------------------------ */
 .artikel-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 20px;
+
+    .artikel-foto {
+        text-align: center;
+
+        img {
+            width: 70%;
+            max-width: 450px;
+            border-radius: 12px;
+        }
+
+        .foto-label {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: inline-block;
+            font-weight: bold;
+        }
+    }
+
+    .artikel-tekstblok {
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+    }
 }
 
-/* Foto */
-.artikel-foto img {
-    width: 100%;
-    border-radius: 12px;
+/* -----------------------------
+   Artikelen op buurtpagina
+------------------------------ */
+.article-grid {
+    display: grid;
+    gap: 20px;
+
+    .article-card {
+        background: white;
+        padding: 10px;
+        border-radius: 12px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
 }
 
-.foto-label {
-    background: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    position: relative;
-    top: -40px;
-    left: 10px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-/* Tekstblok */
-.artikel-tekstblok {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-}
-
-.artikel-tekstblok h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* --------------------------
+/* -----------------------------
    Reactieformulier
---------------------------- */
-
+------------------------------ */
 .reactie-form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 15px;
-    margin-top: 20px;
+
+    input,
+    textarea {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 6px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    .radio-group {
+        display: grid;
+        gap: 5px;
+    }
+
+    button {
+        padding: 12px;
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-textarea {
-    height: 120px;
-}
-
-button {
-    padding: 12px;
-    background: black;
-    color: white;
-    border-radius: 6px;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #333;
-}
-
-/* --------------------------
-   Tablet (vanaf 700px)
---------------------------- */
-
+/* -----------------------------
+   Tablet
+------------------------------ */
 @media (min-width: 700px) {
     .artikel-container {
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .artikel-foto,
-    .artikel-tekstblok {
-        flex: 1;
+    .article-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-/* --------------------------
-   Desktop (vanaf 1000px)
---------------------------- */
-
+/* -----------------------------
+   Desktop 
+------------------------------ */
 @media (min-width: 1000px) {
     .pagina-titel {
         font-size: 2.2rem;
     }
 
-    .artikel-tekstblok {
-        padding: 30px;
+    .article-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

@@ -15,7 +15,7 @@
 <body>
 
 <header class="header-main">
-    <h1><a href="zuidoost.html">← Terug naar Zuidoost</a></h1>
+    <h1><a href="../zuidoost.html">← Terug naar Zuidoost</a></h1>
 </header>
 
 <main>
@@ -83,6 +83,7 @@
         <h2>Laat een reactie achter</h2>
 
         <form class="reactie-form">
+
             <label>Naam</label>
             <input type="text" required>
 
@@ -90,9 +91,11 @@
             <input type="email" required>
 
             <label>Regio</label>
-            <input type="radio" name="regio" value="Oost"> Oost  
-            <input type="radio" name="regio" value="Zuidoost"> Zuidoost  
-            <input type="radio" name="regio" value="Nieuw-West"> Nieuw-West  
+            <div class="radio-group">
+                <label><input type="radio" name="regio" value="Oost"> Oost</label>
+                <label><input type="radio" name="regio" value="Zuidoost"> Zuidoost</label>
+                <label><input type="radio" name="regio" value="Nieuw-West"> Nieuw-West</label>
+            </div>
 
             <label>Bericht</label>
             <textarea required></textarea>
