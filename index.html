@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buurtcampuskrant – Home</title>
+    <title>Buurtcampuskrant Home</title>
 
     <link rel="stylesheet" href="https://toasterbath0758.github.io/look-and-feel-styleguide-BCK/styleguide-buurtcampuskrant.css">
     <link rel="stylesheet" href="style.css">
@@ -23,8 +23,65 @@
 </header>
 
 <main>
-    <h2>Welkom bij de Buurtcampuskrant</h2>
-    <p>Kies een buurt om artikelen te bekijken.</p>
+
+    <section class="news-and-form">
+        
+        <!-- LINKERKANT – NIEUWS -->
+        <div class="news-section">
+            <h2>Nieuws</h2>
+
+            <div class="news-grid">
+
+                <!-- Artikel 1 -->
+                <article class="news-card">
+                    <a href="artikel pagina.html">
+                        <img src="buurtheld.jpg" alt="Artikel afbeelding 1">
+                        <h3>De nieuwe look van de Buurtcampus</h3>
+                        <p>'Deze plek is de huiskamer van de stad'</p>
+                    </a>
+                </article>
+
+                <!-- Artikel 2 -->
+                <article class="news-card">
+                    <a href="artikel2.html">
+                        <img src="assets/zuidoost2.jpg" alt="Artikel afbeelding 2">
+                        <h3>Hulp bij Digitaal</h3>
+                        <p>'Het doorsturen van een e-mail is een stuk eenvoudiger dan het leek'</p>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- RECHTERKANT – REACTIEFORMULIER -->
+        <section class="reaction-section">
+            <h2>Laat een reactie achter</h2>
+
+            <form class="reaction-form">
+                
+                <label for="name">Naam</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Regio</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="regio" value="Oost"> Oost</label>
+                    <label><input type="radio" name="regio" value="Zuidoost"> Zuidoost</label>
+                    <label><input type="radio" name="regio" value="Nieuw-West"> Nieuw-West</label>
+                </div>
+
+                <label for="bericht">Bericht</label>
+                <textarea id="bericht" name="bericht" required></textarea>
+
+                <button type="submit">Versturen</button>
+
+            </form>
+        </section>
+
+    </section>
+
 </main>
 
 </body>

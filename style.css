@@ -14,95 +14,91 @@ body {
     margin-bottom: 30px;
 }
 
-/* -----------------------------
-   Artikelen / Artikelpagina
------------------------------- */
-.artikel-container {
+/* ---------------------------------------------------
+   Homepagina Layout (Nieuws + Formulier)
+---------------------------------------------------- */
+.news-and-form {
     display: grid;
-    gap: 20px;
-
-    .artikel-foto {
-        text-align: center;
-
-        img {
-            width: 70%;
-            max-width: 450px;
-            border-radius: 12px;
-        }
-
-        .foto-label {
-            background: white;
-            padding: 10px 15px;
-            border-radius: 8px;
-            margin-top: 10px;
-            display: inline-block;
-            font-weight: bold;
-        }
-    }
-
-    .artikel-tekstblok {
-        background: white;
-        padding: 20px;
-        border-radius: 15px;
-
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-    }
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    padding: 20px;
 }
 
 /* -----------------------------
-   Artikelen op buurtpagina
+   Nieuwssectie links
 ------------------------------ */
-.article-grid {
+.news-section h2 {
+    margin-bottom: 15px;
+}
+
+.news-grid {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
 
-    .article-card {
-        background: white;
-        padding: 10px;
-        border-radius: 12px;
-        text-align: center;
+.news-card img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-        img {
-            width: 100%;
-            border-radius: 12px;
-        }
-    }
+.news-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: #333;
 }
 
 /* -----------------------------
-   Reactieformulier
+   REACTIEFORMULIER RECHTS
 ------------------------------ */
-.reactie-form {
+.reaction-section {
+    background: #e9ebf2;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.reaction-section h2 {
+    margin-bottom: 20px;
+}
+
+.reaction-form {
     display: grid;
     gap: 15px;
+}
 
-    input,
-    textarea {
-        padding: 10px;
-        border: 2px solid black;
-        border-radius: 6px;
-    }
+.reaction-form input,
+.reaction-form textarea {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 15px;
+}
 
-    textarea {
-        height: 120px;
-    }
+.reaction-form textarea {
+    height: 120px;
+}
 
-    .radio-group {
-        display: grid;
-        gap: 5px;
-    }
+.radio-group {
+    display: grid;
+    gap: 5px;
+}
 
-    button {
-        padding: 12px;
-        background: black;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-    }
+.reaction-form button {
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.reaction-form button:hover {
+    opacity: 0.85;
 }
 
 /* -----------------------------
