@@ -1,43 +1,28 @@
-/* ---------------------------------------
-   Algemene pagina layout
----------------------------------------- */
+/* Algemene layout */
 body {
     margin: 0;
     padding: 20px;
-    /* background: #f5f6fb; */
 }
 
-/* ---------------------------------------
-   Homepagina: Nieuws + Formulier layout
----------------------------------------- */
+/* Nieuws + formulier */
 .news-and-form {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
+    display: block;
     padding: 20px;
 }
 
-/* ---------------------------------------
-   Nieuws sectie layout
----------------------------------------- */
+/* Nieuws sectie */
 .news-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: block;
 }
 
 .news-card img {
     width: 100%;
-    /* border-radius: 10px; */
 }
 
-/* ---------------------------------------
-   Reactieformulier layout
----------------------------------------- */
+/* Formulier */
 .reaction-section {
-    /* background: #e9ebf2; */
     padding: 30px;
-    border-radius: 12px; /* deze kan blijven → is puur layout */
+    border-radius: 12px;
 }
 
 .reaction-form {
@@ -48,4 +33,22 @@ body {
 .radio-group {
     display: grid;
     gap: 5px;
+}
+
+/* Tablet (2 kolommen nieuws) */
+@media (min-width: 700px) {
+    .news-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* Laptop / desktop */
+@media (min-width: 1000px) {
+    .news-and-form {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 40px;
+    }
 }

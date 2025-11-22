@@ -9,68 +9,84 @@
     <link rel="stylesheet" href="https://toasterbath0758.github.io/look-and-feel-styleguide-BCK/styleguide-buurtcampuskrant.css">
 
     <!-- Jouw CSS -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="header-main">
-    <h1><a href="../zuidoost.html">← Terug naar Zuidoost</a></h1>
+
+    <!-- Titel zoals op de homepage -->
+    <h1 class="font-size-xxl">
+        <a href="index.html">Buurtcampuskrant</a>
+    </h1>
+
+    <!-- Navigatie identiek aan homepage -->
+    <nav class="navList">
+        <ul id="navList">
+            <li><a class="navKnop font-size-l" href="zuidoost.html">Zuidoost</a></li>
+            <li><a class="navKnop font-size-l" href="oost.html">Oost</a></li>
+            <li><a class="navKnop font-size-l" href="nieuw-west.html">Nieuw-West</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 
-    <h1 class="pagina-titel">Een Buurtheld uit Zuidoost: ontmoet Michelle Walker</h1>
+    <h1 class="pagina-titel font-size-xl">Een Buurtheld uit Zuidoost: ontmoet Michelle Walker</h1>
 
-    <!-- ARTIKEL -->
+    <!-- Artikelcontainer -->
     <section class="artikel-container">
 
-        <!-- FOTO -->
+        <!-- Foto -->
         <div class="artikel-foto">
-            <img src="../buurtheld.jpg" alt="Michelle Walker bij de OBA Zuidoost">
-            <div class="foto-label">Buurtheld uit Zuidoost</div>
+            <img src="buurtheld.jpg" alt="Michelle Walker bij de OBA Zuidoost">
+            <figcaption class="font-size-s foto-label">Buurtheld uit Zuidoost</figcaption>
         </div>
 
-        <!-- TEKST -->
+        <!-- Tekstblok -->
         <div class="artikel-tekstblok">
 
-            <h2>Wie is Michelle Walker?</h2>
+            <h2 class="font-size-xl">Wie is Michelle Walker?</h2>
 
-            <p>
-                Michelle Walker (42) is moeder van drie jongens van 16, 13 en 8 jaar. 
-                Ze werkt als servicemedewerker bij de OBA in Zuidoost én heeft een kapsalon 
-                waar ze twee dagen per week werkt. Ze woont samen met haar man en kinderen 
-                in Duivendrecht.
+            <p class="font-size-s">
+                Michelle Walker is moeder van drie energieke jongens. 
+                Ze werkt als servicemedewerker bij de OBA Zuidoost. 
+                Daarnaast runt ze twee dagen per week haar kapsalon. 
+                Ze woont met haar gezin in het rustige Duivendrecht.
             </p>
 
-            <p class="streamer"><strong>“In een dorp voel ik me soms een bezienswaardigheid.”</strong></p>
+            <blockquote class="blockquote1">
+                <p class="font-size-l"><strong>“In een dorp voel ik me soms een bezienswaardigheid.”</strong></p>
+            </blockquote>
 
-            <p>
-                “Ik ben geboren in Amsterdam-Oost. Later woonde ik in het centrum, maar dat
-                is inmiddels veel te toeristisch. Daarna woonde ik in Amstelveen en 
-                vervolgens in Diemen-Zuid. Met drie kinderen hadden we meer ruimte nodig en 
-                dus verhuisden we naar Duivendrecht. Rustig, fijn – en de drukte is altijd dichtbij.”
+            <p class="font-size-s">
+                “Ik groeide op in Amsterdam-Oost tussen veel culturen. 
+                Later woonde ik in het centrum, maar dat werd te druk. 
+                Met drie kinderen hadden we meer ruimte nodig thuis. 
+                Daarom verhuisden we uiteindelijk naar Duivendrecht.”
             </p>
 
-            <p>
-                “Amsterdam is voor mij thuiskomen. Ik ben opgegroeid tussen mensen van 
-                allerlei achtergronden, dat voelt normaal. Maar wanneer ik met mijn gezin 
-                in een dorp kom, merk ik dat mensen ons soms aankijken. In Zuidoost voel ik 
-                me thuis: divers, warm, open.”
+            <p class="font-size-s">
+                “Amsterdam voelt voor mij altijd warm en vertrouwd aan. 
+                Ik ben opgegroeid met mensen van allerlei achtergronden. 
+                Buiten de stad merk ik soms dat mensen naar ons kijken. 
+                In Zuidoost voel ik me vooral gezien, welkom en thuis.”
             </p>
 
-            <h2>Waarom Zuidoost bijzonder is</h2>
+            <h2 class="font-size-xl">Waarom Zuidoost bijzonder is</h2>
 
-            <p>
-                “De mix van culturen is hier uniek. In andere delen van de stad leeft alles 
-                meer naast elkaar, maar hier leeft het samen. Je hebt hier echt een 
-                afspiegeling van de maatschappij. Ook is er veel te doen en zijn er veel 
-                verschillende winkels en eettentjes.”
+            <p class="font-size-s">
+                “Zuidoost heeft een unieke mix van culturen en verhalen. 
+                Mensen leven hier niet naast elkaar maar echt mét elkaar. 
+                De buurt voelt als een kleine wereld vol energie en warmte. 
+                Overal vind je winkels, events en verschillende keukens.”
             </p>
 
-            <p>
-                “Mijn tip? De Afrikaanse restaurants in de buurt. Onlangs at ik heerlijke 
-                gefrituurde broodjes bij een stalletje bij Kraaiennest. Echt een ontdekking!”
+            <p class="font-size-s">
+                “Mijn tip: probeer de Afrikaanse restaurants in de buurt. 
+                Onlangs proefde ik heerlijke gefrituurde broodjes bij Kraaiennest. 
+                Het was verrassend lekker en absoluut een aanrader voor iedereen.”
             </p>
 
         </div>
@@ -78,29 +94,29 @@
 
     <hr>
 
-    <!-- REACTIEFORMULIER -->
+    <!-- Reactieformulier -->
     <section>
-        <h2>Laat een reactie achter</h2>
+        <h2 class="font-size-xl">Laat een reactie achter</h2>
 
-        <form class="reactie-form">
+        <form class="contact-form">
 
-            <label>Naam</label>
-            <input type="text" required>
+            <label class="form-label-text">Naam</label>
+            <input type="text" class="input-field" required>
 
-            <label>Email</label>
-            <input type="email" required>
+            <label class="form-label-text">Email</label>
+            <input type="email" class="input-field" required>
 
-            <label>Regio</label>
+            <label class="form-label-text">Regio</label>
             <div class="radio-group">
                 <label><input type="radio" name="regio" value="Oost"> Oost</label>
                 <label><input type="radio" name="regio" value="Zuidoost"> Zuidoost</label>
                 <label><input type="radio" name="regio" value="Nieuw-West"> Nieuw-West</label>
             </div>
 
-            <label>Bericht</label>
-            <textarea required></textarea>
+            <label class="form-label-textarea">Bericht</label>
+            <textarea class="textarea-input-field" required></textarea>
 
-            <button type="submit">Versturen</button>
+            <button class="submit-button">Versturen</button>
         </form>
     </section>
 
