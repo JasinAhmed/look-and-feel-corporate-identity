@@ -1,22 +1,15 @@
-/* -----------------------------
-   Algemene pagina
------------------------------- */
+/* ---------------------------------------
+   Algemene pagina layout
+---------------------------------------- */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background: #f5f6fb;
+    /* background: #f5f6fb; */
 }
 
-.pagina-titel {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-}
-
-/* ---------------------------------------------------
-   Homepagina Layout (Nieuws + Formulier)
----------------------------------------------------- */
+/* ---------------------------------------
+   Homepagina: Nieuws + Formulier layout
+---------------------------------------- */
 .news-and-form {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -24,13 +17,9 @@ body {
     padding: 20px;
 }
 
-/* -----------------------------
-   Nieuwssectie links
------------------------------- */
-.news-section h2 {
-    margin-bottom: 15px;
-}
-
+/* ---------------------------------------
+   Nieuws sectie layout
+---------------------------------------- */
 .news-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,30 +28,16 @@ body {
 
 .news-card img {
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
-.news-card h3 {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.news-card p {
-    font-size: 14px;
-    color: #333;
-}
-
-/* -----------------------------
-   REACTIEFORMULIER RECHTS
------------------------------- */
+/* ---------------------------------------
+   Reactieformulier layout
+---------------------------------------- */
 .reaction-section {
-    background: #e9ebf2;
+    /* background: #e9ebf2; */
     padding: 30px;
-    border-radius: 12px;
-}
-
-.reaction-section h2 {
-    margin-bottom: 20px;
+    border-radius: 12px; /* deze kan blijven → is puur layout */
 }
 
 .reaction-form {
@@ -70,59 +45,7 @@ body {
     gap: 15px;
 }
 
-.reaction-form input,
-.reaction-form textarea {
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-.reaction-form textarea {
-    height: 120px;
-}
-
 .radio-group {
     display: grid;
     gap: 5px;
-}
-
-.reaction-form button {
-    padding: 12px;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-.reaction-form button:hover {
-    opacity: 0.85;
-}
-
-/* -----------------------------
-   Tablet
------------------------------- */
-@media (min-width: 700px) {
-    .artikel-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .article-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* -----------------------------
-   Desktop 
------------------------------- */
-@media (min-width: 1000px) {
-    .pagina-titel {
-        font-size: 2.2rem;
-    }
-
-    .article-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }

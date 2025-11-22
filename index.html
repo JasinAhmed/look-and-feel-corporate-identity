@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buurtcampuskrant Home</title>
 
+    <!-- Gedeelde styleguide -->
     <link rel="stylesheet" href="https://toasterbath0758.github.io/look-and-feel-styleguide-BCK/styleguide-buurtcampuskrant.css">
+    <!-- Je eigen extra styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="header-main">
-    <h1><a href="index.html">Buurtcampuskrant</a></h1>
-    <nav>
-        <ul>
-            <li><a href="zuidoost.html">Zuidoost</a></li>
-            <li><a href="oost.html">Oost</a></li>
-            <li><a href="nieuw-west.html">Nieuw-West</a></li>
+    <!-- Titel in stijl van Kop 1 -->
+    <h1 class="font-size-xxl">
+        <a href="index.html">Buurtcampuskrant</a>
+    </h1>
+
+    <!-- Navigatie in stijl van de nav uit de styleguide -->
+    <nav class="navList">
+        <ul id="navList">
+            <li><a class="navKnop font-size-l" href="zuidoost.html">Zuidoost</a></li>
+            <li><a class="navKnop font-size-l" href="oost.html">Oost</a></li>
+            <li><a class="navKnop font-size-l" href="nieuw-west.html">Nieuw-West</a></li>
         </ul>
     </nav>
 </header>
@@ -28,7 +35,7 @@
         
         <!-- LINKERKANT – NIEUWS -->
         <div class="news-section">
-            <h2>Nieuws</h2>
+            <h2 class="font-size-xl">Nieuws</h2>
 
             <div class="news-grid">
 
@@ -36,8 +43,8 @@
                 <article class="news-card">
                     <a href="artikel pagina.html">
                         <img src="buurtheld.jpg" alt="Artikel afbeelding 1">
-                        <h3>De nieuwe look van de Buurtcampus</h3>
-                        <p>'Deze plek is de huiskamer van de stad'</p>
+                        <h3 class="font-size-l">De nieuwe look van de Buurtcampus</h3>
+                        <p class="font-size-s">'Deze plek is de huiskamer van de stad'</p>
                     </a>
                 </article>
 
@@ -45,8 +52,8 @@
                 <article class="news-card">
                     <a href="artikel2.html">
                         <img src="assets/zuidoost2.jpg" alt="Artikel afbeelding 2">
-                        <h3>Hulp bij Digitaal</h3>
-                        <p>'Het doorsturen van een e-mail is een stuk eenvoudiger dan het leek'</p>
+                        <h3 class="font-size-l">Hulp bij Digitaal</h3>
+                        <p class="font-size-s">'Het doorsturen van een e-mail is een stuk eenvoudiger dan het leek'</p>
                     </a>
                 </article>
 
@@ -55,27 +62,39 @@
 
         <!-- RECHTERKANT – REACTIEFORMULIER -->
         <section class="reaction-section">
-            <h2>Laat een reactie achter</h2>
 
-            <form class="reaction-form">
+            <h2 class="font-size-xl">Laat een reactie achter</h2>
+
+            <!-- Zelfde form-classes als in de styleguide -->
+            <form class="reaction-form contact-form">
                 
-                <label for="name">Naam</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name" class="form-label-text">Naam</label>
+                <input type="text" id="name" name="name" class="input-field" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email" class="form-label-text">Email</label>
+                <input type="email" id="email" name="email" class="input-field" required>
 
-                <label>Regio</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="regio" value="Oost"> Oost</label>
-                    <label><input type="radio" name="regio" value="Zuidoost"> Zuidoost</label>
-                    <label><input type="radio" name="regio" value="Nieuw-West"> Nieuw-West</label>
-                </div>
+                <p class="form-label-text">Regio</p>
+                <fieldset>
+                    <legend class="font-size-s">Kies je regio</legend>
+                    <label>
+                        <input type="radio" name="regio" value="Oost">
+                        Oost
+                    </label>
+                    <label>
+                        <input type="radio" name="regio" value="Zuidoost">
+                        Zuidoost
+                    </label>
+                    <label>
+                        <input type="radio" name="regio" value="Nieuw-West">
+                        Nieuw-West
+                    </label>
+                </fieldset>
 
-                <label for="bericht">Bericht</label>
-                <textarea id="bericht" name="bericht" required></textarea>
+                <label for="bericht" class="form-label-textarea">Bericht</label>
+                <textarea id="bericht" name="bericht" class="textarea-input-field" required></textarea>
 
-                <button type="submit">Versturen</button>
+                <button class="submit-button" type="submit">Versturen</button>
 
             </form>
         </section>
