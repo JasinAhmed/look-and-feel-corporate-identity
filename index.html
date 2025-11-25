@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buurtcampuskrant Home</title>
+    <title>Buurtcampuskrant</title>
 
-    <!-- Gedeelde styleguide -->
+    <!-- Styleguide -->
     <link rel="stylesheet" href="https://toasterbath0758.github.io/look-and-feel-styleguide-BCK/styleguide-buurtcampuskrant.css">
-    <!-- Je eigen extra styles -->
+
+    <!-- Jouw eigen CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="header-main">
-    <!-- Titel in stijl van Kop 1 -->
     <h1 class="font-size-xxl">
         <a href="index.html">Buurtcampuskrant</a>
     </h1>
 
-    <!-- Navigatie in stijl van de nav uit de styleguide -->
     <nav class="navList">
         <ul id="navList">
             <li><a class="navKnop font-size-l" href="zuidoost.html">Zuidoost</a></li>
@@ -31,76 +30,47 @@
 
 <main>
 
-    <section class="news-and-form">
-        
-        <!-- LINKERKANT – NIEUWS -->
-        <div class="news-section">
-            <h2 class="font-size-xl">Nieuws</h2>
+<section class="news-and-form">
 
-            <div class="news-grid">
+    <!-- NIEUWS -->
+    <div class="news-section">
+        <h2 class="font-size-xl">Nieuws</h2>
 
-                <!-- Artikel 1 -->
-                <article class="news-card">
-                    <a href="artikel pagina.html">
-                        <img src="buurtheld.jpg" alt="Artikel afbeelding 1">
-                        <h3 class="font-size-l">De nieuwe look van de Buurtcampus</h3>
-                        <p class="font-size-s">'Deze plek is de huiskamer van de stad'</p>
-                    </a>
-                </article>
+        <div class="news-grid">
 
-                <!-- Artikel 2 -->
-                <article class="news-card">
-                    <a href="artikel2.html">
-                        <img src="assets/zuidoost2.jpg" alt="Artikel afbeelding 2">
-                        <h3 class="font-size-l">Hulp bij Digitaal</h3>
-                        <p class="font-size-s">'Het doorsturen van een e-mail is een stuk eenvoudiger dan het leek'</p>
-                    </a>
-                </article>
+            <article class="news-card">
+                <a href="artikel pagina.html">
+                    <img src="Tanja .jpg" alt="in gesprek met Tanja Jadnanansing">
+                    <h3 class="font-size-m">In gesprek met stadsdeelvoorzitter Tanja Jadnanansing: een inspirerend gastcollege over rechtvaardigheid en bestuur</h3>
+                    <p class="font-size-s">‘Besturen betekent niet alleen dat je in de driver’s seat zit ’</p>
+                </a>
+            </article>
 
-            </div>
+            <article class="news-card">
+                <a href="artikel2.html">
+                    <img src="assets/zuidoost2.jpg" alt="Hulp bij Digitaal">
+                    <h3 class="font-size-m">Hulp bij Digitaal</h3>
+                    <p class="font-size-s">‘Een e-mail doorsturen is eenvoudiger dan het lijkt’</p>
+                </a>
+            </article>
+
+            <article class="news-card">
+                <a href="artikel3.html">
+                    <img src="assets/oost1.jpg" alt="Lang Leven Thuisflats">
+                    <h3 class="font-size-m">Onderwijs en buurt samen</h3>
+                    <p class="font-size-s">Lang Leven Thuisflats in Amsterdam</p>
+                </a>
+            </article>
+
+            <article class="news-card">
+                <a href="artikel4.html">
+                    <img src="assets/nieuwwest1.jpg" alt="Living Labs">
+                    <h3 class="font-size-m">Living Labs in actie</h3>
+                    <p class="font-size-s">Studenten en buurtbewoners leren samen</p>
+                </a>
+            </article>
+
         </div>
-
-        <!-- RECHTERKANT – REACTIEFORMULIER -->
-        <section class="reaction-section">
-
-            <h2 class="font-size-xl">Laat een reactie achter</h2>
-
-            <!-- Zelfde form-classes als in de styleguide -->
-            <form class="reaction-form contact-form">
-                
-                <label for="name" class="form-label-text">Naam</label>
-                <input type="text" id="name" name="name" class="input-field" required>
-
-                <label for="email" class="form-label-text">Email</label>
-                <input type="email" id="email" name="email" class="input-field" required>
-
-                <p class="form-label-text">Regio</p>
-                <fieldset>
-                    <legend class="font-size-s">Kies je regio</legend>
-                    <label>
-                        <input type="radio" name="regio" value="Oost">
-                        Oost
-                    </label>
-                    <label>
-                        <input type="radio" name="regio" value="Zuidoost">
-                        Zuidoost
-                    </label>
-                    <label>
-                        <input type="radio" name="regio" value="Nieuw-West">
-                        Nieuw-West
-                    </label>
-                </fieldset>
-
-                <label for="bericht" class="form-label-textarea">Bericht</label>
-                <textarea id="bericht" name="bericht" class="textarea-input-field" required></textarea>
-
-                <button class="submit-button" type="submit">Versturen</button>
-
-            </form>
-        </section>
-
-    </section>
-
 </main>
 
 </body>
