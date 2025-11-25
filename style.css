@@ -1,33 +1,102 @@
 /* =========================================
-   BASIS (MOBILE FIRST)
+   BASIS
 ========================================= */
 body {
     margin: 0;
-    padding: 20px;
 }
 
 /* =========================================
-   NIEUWS + FORMULIER (homepage)
+   HEADER
 ========================================= */
+.header-main {
+    padding: 10px 20px;
+}
+
+.header-main h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navList {
+    margin-top: 10px;
+}
+
+/* Desktop header layout */
+@media (min-width: 800px) {
+    .header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+    }
+
+    .navList {
+        margin-top: 0;
+    }
+
+    #navList {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+/* =========================================
+   NIEUWS – KRANTLAYOUT
+========================================= */
+
 .news-and-form {
     padding: 20px;
 }
 
-/* Nieuws onder elkaar op mobiel */
+/* Krantstijl grid */
 .news-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Mobiel – 1 kolom */
+@media (max-width: 699px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet – 2 kolommen */
+@media (min-width: 700px) and (max-width: 999px) {
+    .news-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop – 3 kolommen */
+@media (min-width: 1000px) {
+    .news-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Nieuwskaarten */
+.news-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
     display: block;
 }
 
-.news-card img {
-    width: 100%;
-    border-radius: 12px;
+.news-card h3 {
+    margin: 10px 0 5px;
+}
+
+.news-card p {
+    margin: 0;
 }
 
 /* =========================================
-   FORMULIER (MOBILE FIRST)
+   FORMULIER
 ========================================= */
 .reaction-section {
-    background: #c4ccdd;
     padding: 20px;
     border-radius: 20px;
     max-width: 400px;
@@ -57,18 +126,15 @@ body {
 .submit-button {
     padding: 10px 20px;
     border-radius: 20px;
-    background: #363b76;
-    color: white;
     border: none;
     width: fit-content;
-    margin: 10px auto 0 auto;
+    margin: 10px auto 0;
 }
 
 /* =========================================
    ARTIKEL PAGINA
 ========================================= */
 
-/* Artikel-foto */
 .artikel-foto img {
     width: 100%;
     max-width: 600px;
@@ -77,34 +143,9 @@ body {
     border-radius: 12px;
 }
 
-/* Blockquote centreren */
+/* Blockquote gecentreerd */
 .blockquote1 {
     max-width: 600px;
     margin: 30px auto;
     text-align: center;
-    display: block;
-}
-
-/* =========================================
-   TABLET (min-width: 700px)
-========================================= */
-@media (min-width: 700px) {
-
-    .news-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-}
-
-/* =========================================
-   DESKTOP (min-width: 1000px)
-========================================= */
-@media (min-width: 1000px) {
-
-    .news-and-form {
-        display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        gap: 40px;
-    }
 }
