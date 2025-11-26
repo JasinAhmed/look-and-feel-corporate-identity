@@ -37,8 +37,6 @@ img {
     background: var(--color-lucht-blauw);
     flex-wrap: wrap;
     gap: 12px;
-
-    /* ⭐ FIX: header boven decoratie */
     position: relative;
     z-index: 10;
 }
@@ -224,22 +222,18 @@ img {
     flex-direction: column;
     gap: 14px;
     pointer-events: none;
-
-    /* ⭐ hou decoratie achter header */
     z-index: 1;
 }
 
 .decoratie-links { left: 12px; }
 .decoratie-rechts { right: 12px; }
 
-/* ⭐ NIEUWE CORRECTE ICON-GROOTTE */
 .decoratie-links img,
 .decoratie-rechts img {
     width: 36px;
     height: auto;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
     .decoratie-links img,
     .decoratie-rechts img {
@@ -247,7 +241,6 @@ img {
     }
 }
 
-/* Mobiel (verbergen) */
 @media (max-width: 600px) {
     .decoratie-links,
     .decoratie-rechts {
@@ -260,7 +253,6 @@ img {
 ========================================= */
 
 @media (max-width: 600px) {
-
     .site-title a,
     .header-main h1 a {
         font-size: 1.4rem;
@@ -301,7 +293,6 @@ img {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-
     .site-title a,
     .header-main h1 a {
         font-size: 1.6rem;
@@ -309,7 +300,6 @@ img {
 }
 
 @media (min-width: 1400px) {
-
     .pagina-titel,
     .artikel-foto,
     .artikel-tekstblok {
@@ -330,7 +320,6 @@ img {
    GEBIED-KLEUREN (HEADER)
 ========================================= */
 
-/* 🟦 ZUIDOOST */
 .header-zuidoost {
     background-color: var(--color2) !important;
     color: var(--color6) !important;
@@ -340,7 +329,6 @@ img {
     color: var(--color6) !important;
 }
 
-/* 🟪 OOST */
 .header-oost {
     background-color: var(--color3) !important;
     color: var(--color6) !important;
@@ -350,7 +338,6 @@ img {
     color: var(--color6) !important;
 }
 
-/* 🟩 NIEUW-WEST */
 .header-nieuw-west {
     background-color: var(--color4) !important;
     color: var(--color6) !important;
@@ -358,4 +345,29 @@ img {
 .header-nieuw-west h1 a,
 .header-nieuw-west #navList a {
     color: var(--color6) !important;
+}
+
+/* =========================================
+   FILTER BLOK van internet gepakt
+========================================= */
+
+.filter-box {
+    background-color: var(--color2);
+    padding: 25px 30px;
+    border-radius: 16px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 20px 0 40px 0;
+}
+
+.filter-item {
+    font-family: "BuurtCampusArial-Bold";
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+}
+
+.filter-item:hover {
+    text-decoration: underline;
 }
