@@ -47,6 +47,14 @@ img {
     font-size: 1.8rem;
     text-transform: uppercase;
     color: var(--color3);
+
+    @media (max-width: 600px) {
+        font-size: 1.4rem;
+    }
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+        font-size: 1.6rem;
+    }
 }
 
 #navList {
@@ -57,6 +65,10 @@ img {
     margin: 0;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: 600px) {
+        gap: 15px;
+    }
 }
 
 /* =========================================
@@ -92,6 +104,16 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 50px;
     margin-top: 50px;
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    @media (min-width: 1400px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
 }
 
 .news-card {
@@ -104,6 +126,14 @@ img {
     height: 240px;
     object-fit: cover;
     border-radius: 10px;
+
+    @media (max-width: 600px) {
+        height: 200px;
+    }
+
+    @media (min-width: 1400px) {
+        height: 260px;
+    }
 }
 
 .news-title {
@@ -126,12 +156,25 @@ img {
     padding: 0 20px;
     font-size: 2rem;
     line-height: 1.3;
+
+    @media (max-width: 600px) {
+        font-size: 1.35rem;
+        text-align: center;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1100px;
+    }
 }
 
 .artikel-foto {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+
+    @media (min-width: 1400px) {
+        max-width: 1100px;
+    }
 }
 
 .artikel-foto img {
@@ -146,6 +189,15 @@ img {
     padding: 20px;
     font-size: 1.1rem;
     line-height: 1.55;
+
+    @media (max-width: 600px) {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1100px;
+    }
 }
 
 /* QUOTE */
@@ -177,6 +229,11 @@ img {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @media (max-width: 600px) {
+        padding: 20px;
+        border-radius: 22px;
+    }
 }
 
 .input-field,
@@ -207,6 +264,11 @@ img {
     border-radius: 20px;
     margin: 0 auto;
     cursor: pointer;
+
+    @media (max-width: 600px) {
+        width: 100%;
+        padding: 14px;
+    }
 }
 
 /* =========================================
@@ -223,96 +285,27 @@ img {
     gap: 14px;
     pointer-events: none;
     z-index: 1;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
 
-.decoratie-links { left: 12px; }
-.decoratie-rechts { right: 12px; }
+.decoratie-links {
+    left: 12px;
+}
+
+.decoratie-rechts {
+    right: 12px;
+}
 
 .decoratie-links img,
 .decoratie-rechts img {
     width: 36px;
     height: auto;
-}
 
-@media (max-width: 1024px) {
-    .decoratie-links img,
-    .decoratie-rechts img {
+    @media (max-width: 1024px) {
         width: 28px;
-    }
-}
-
-@media (max-width: 600px) {
-    .decoratie-links,
-    .decoratie-rechts {
-        display: none;
-    }
-}
-
-/* =========================================
-   MEDIA QUERIES
-========================================= */
-
-@media (max-width: 600px) {
-    .site-title a,
-    .header-main h1 a {
-        font-size: 1.4rem;
-    }
-
-    #navList {
-        gap: 15px;
-    }
-
-    .pagina-titel {
-        font-size: 1.35rem;
-        text-align: center;
-    }
-
-    .artikel-tekstblok {
-        font-size: 1rem;
-        padding: 15px;
-    }
-
-    .contact-form {
-        padding: 20px;
-        border-radius: 22px;
-    }
-
-    .submit-button {
-        width: 100%;
-        padding: 14px;
-    }
-
-    .news-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .news-card img {
-        height: 200px;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1024px) {
-    .site-title a,
-    .header-main h1 a {
-        font-size: 1.6rem;
-    }
-}
-
-@media (min-width: 1400px) {
-    .pagina-titel,
-    .artikel-foto,
-    .artikel-tekstblok {
-        max-width: 1100px;
-    }
-
-    .news-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 60px;
-    }
-
-    .news-card img {
-        height: 260px;
     }
 }
 
@@ -324,6 +317,7 @@ img {
     background-color: var(--color2) !important;
     color: var(--color6) !important;
 }
+
 .header-zuidoost h1 a,
 .header-zuidoost #navList a {
     color: var(--color6) !important;
@@ -333,6 +327,7 @@ img {
     background-color: var(--color3) !important;
     color: var(--color6) !important;
 }
+
 .header-oost h1 a,
 .header-oost #navList a {
     color: var(--color6) !important;
@@ -342,13 +337,14 @@ img {
     background-color: var(--color4) !important;
     color: var(--color6) !important;
 }
+
 .header-nieuw-west h1 a,
 .header-nieuw-west #navList a {
     color: var(--color6) !important;
 }
 
 /* =========================================
-   FILTER BLOK van internet gepakt
+   FILTER BLOK
 ========================================= */
 
 .filter-box {
