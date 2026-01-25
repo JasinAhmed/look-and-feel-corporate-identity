@@ -14,11 +14,13 @@
 
 <body>
 
+<a class="skiplink" href="#main">Ga naar inhoud</a>
+
 <header class="header-main">
 
-    <h1 class="font-size-xxl">
+    <p class="font-size-xxl site-title">
         <a href="index.html">Buurtcampuskrant</a>
-    </h1>
+    </p>
 
     <nav class="navList">
         <ul id="navList">
@@ -29,22 +31,20 @@
     </nav>
 </header>
 
-
-<main>
+<main id="main">
     <!-- ZIJ-DECORATIE -->
     <div class="decoratie-links">
-        <img src="Buurtcampus 59.png">
-        <img src="Buurtcampus 60.png">
-        <img src="Buurtcampus 61.png">
+        <img src="Buurtcampus 59.png" alt="">
+        <img src="Buurtcampus 60.png" alt="">
+        <img src="Buurtcampus 61.png" alt="">
     </div>
 
     <div class="decoratie-rechts">
-        <img src="Buurtcampus 62.png">
-        <img src="Buurtcampus 63.png">
-        <img src="Buurtcampus 64.png">
-        <img src="Buurtcampus 65.png">
+        <img src="Buurtcampus 62.png" alt="">
+        <img src="Buurtcampus 63.png" alt="">
+        <img src="Buurtcampus 64.png" alt="">
+        <img src="Buurtcampus 65.png" alt="">
     </div>
-
 
     <!-- PAGINATITEL -->
     <h1 class="pagina-titel font-size-xl">
@@ -115,35 +115,34 @@
 
     <hr>
 
-   <hr>
+    <!-- REACTIEFORMULIER -->
+    <section class="reactie-container">
 
-<!-- REACTIEFORMULIER -->
-<section class="reactie-container">
+        <h2 class="reactie-titel font-size-xl">Laat een reactie achter</h2>
 
-    <h2 class="reactie-titel font-size-xl">Laat een reactie achter</h2>
+        <form class="contact-form">
 
-    <form class="contact-form">
+            <label for="naam" class="form-label-text">Naam</label>
+            <input id="naam" type="text" class="input-field" required>
 
-        <label class="form-label-text">Naam</label>
-        <input type="text" class="input-field" required>
+            <label for="email" class="form-label-text">E-mail</label>
+            <input id="email" type="email" class="input-field" required>
 
-        <label class="form-label-text">E-mail</label>
-        <input type="email" class="input-field" required>
+            <p class="form-label-text">Regio</p>
+            <div class="radio-group">
+                <label><input type="radio" name="regio" value="Oost"> Oost</label>
+                <label><input type="radio" name="regio" value="Zuidoost"> Zuidoost</label>
+                <label><input type="radio" name="regio" value="Nieuw-West"> Nieuw-West</label>
+            </div>
 
-        <label class="form-label-text">Regio</label>
-        <div class="radio-group">
-            <label><input type="radio" name="regio" value="Oost"> Oost</label>
-            <label><input type="radio" name="regio" value="Zuidoost"> Zuidoost</label>
-            <label><input type="radio" name="regio" value="Nieuw-West"> Nieuw-West</label>
-        </div>
+            <label for="bericht" class="form-label-textarea">Bericht</label>
+            <textarea id="bericht" class="textarea-input-field" required></textarea>
 
-        <label class="form-label-textarea">Bericht</label>
-        <textarea class="textarea-input-field" required></textarea>
+            <button class="submit-button">Versturen</button>
 
-        <button class="submit-button">Versturen</button>
-    </form>
+        </form>
 
-</section>
+    </section>
 
 </main>
 
