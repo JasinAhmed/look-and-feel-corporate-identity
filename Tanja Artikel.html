@@ -14,11 +14,13 @@
 
 <body>
 
+<a class="skiplink" href="#main">Ga naar inhoud</a>
+
 <header class="header-main">
 
-    <h1 class="site-title">
+    <p class="site-title">
         <a href="index.html">Buurtcampuskrant</a>
-    </h1>
+    </p>
 
     <nav class="navList">
         <ul id="navList">
@@ -30,20 +32,20 @@
 
 </header>
 
-<main>
+<main id="main">
 
     <!-- ZIJ-DECORATIE -->
     <div class="decoratie-links">
-        <img src="Buurtcampus 59.png">
-        <img src="Buurtcampus 60.png">
-        <img src="Buurtcampus 61.png">
+        <img src="Buurtcampus 59.png" alt="">
+        <img src="Buurtcampus 60.png" alt="">
+        <img src="Buurtcampus 61.png" alt="">
     </div>
 
     <div class="decoratie-rechts">
-        <img src="Buurtcampus 62.png">
-        <img src="Buurtcampus 63.png">
-        <img src="Buurtcampus 64.png">
-        <img src="Buurtcampus 65.png">
+        <img src="Buurtcampus 62.png" alt="">
+        <img src="Buurtcampus 63.png" alt="">
+        <img src="Buurtcampus 64.png" alt="">
+        <img src="Buurtcampus 65.png" alt="">
     </div>
 
     <!-- PAGINATITEL -->
@@ -124,21 +126,21 @@
 
         <form class="contact-form">
 
-            <label class="form-label-text">Naam</label>
-            <input type="text" class="input-field" required>
+            <label for="naam" class="form-label-text">Naam</label>
+            <input id="naam" type="text" class="input-field" required>
 
-            <label class="form-label-text">E-mail</label>
-            <input type="email" class="input-field" required>
+            <label for="email" class="form-label-text">E-mail</label>
+            <input id="email" type="email" class="input-field" required>
 
-            <label class="form-label-text">Regio</label>
-            <div class="radio-group">
-                <label><input type="radio" name="regio" value="Oost"> Oost</label>
-                <label><input type="radio" name="regio" value="Zuidoost"> Zuidoost</label>
-                <label><input type="radio" name="regio" value="Nieuw-West"> Nieuw-West</label>
-            </div>
+            <p class="form-label-text">Regio</p>
+            <ul class="radio-group">
+                <li><label><input type="radio" name="regio" value="Oost"> Oost</label></li>
+                <li><label><input type="radio" name="regio" value="Zuidoost"> Zuidoost</label></li>
+                <li><label><input type="radio" name="regio" value="Nieuw-West"> Nieuw-West</label></li>
+            </ul>
 
-            <label class="form-label-textarea">Bericht</label>
-            <textarea class="textarea-input-field" required></textarea>
+            <label for="bericht" class="form-label-textarea">Bericht</label>
+            <textarea id="bericht" class="textarea-input-field" required></textarea>
 
             <button class="submit-button">Versturen</button>
         </form>
